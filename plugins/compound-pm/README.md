@@ -18,7 +18,7 @@ Compound PM is a Claude Code plugin that encodes your PM operating system into r
 
 ```bash
 # Add the marketplace
-claude plugin marketplace add https://github.com/vaibhav/compound-pm-marketplace
+claude plugin marketplace add https://github.com/abhitsian/compound-pm-marketplace
 
 # Install the plugin
 claude plugin install compound-pm

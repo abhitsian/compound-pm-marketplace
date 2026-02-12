@@ -1,0 +1,205 @@
+# Sample PM Profile — Abhishek Sivaraman (B2B SaaS, Employee Experience)
+# This is what a profile looks like after /pm:onboard + several /pm:compound cycles
+# Your profile will look different — it adapts to YOUR operating system
+
+name: "Abhishek Sivaraman"
+role: "PM Lead"
+domain: "B2B SaaS, Employee Experience"
+experience_level: "senior"
+created: "2026-02-12"
+last_updated: "2026-02-12"
+
+# Preferred frameworks — extracted from PM Operating System docs
+frameworks:
+  opportunity_evaluation: "business-outcome-first"
+  # Start with: business priority → data/user insight → customer problem → HMW
+
+  solution_classification: "differentiator-mmr-neutralizer"
+  # Classify every solution as Differentiator, MMR, or Neutralizer
+  # Plot on Risk vs Impact 2x2: Big Bets, No Brainers, Quick Wins, Duds
+
+  metrics_hierarchy: "description-intermediate-outcome"
+  # Description (leading) → Intermediate (intent) → Outcome (impact)
+
+  activation_funnel: "setup-aha-habit"
+  # Setup: completed configuration
+  # Aha: first value moment
+  # Habit: repeated value extraction (define frequency)
+
+  user_segmentation: "casual-core-power"
+  # Casual: 1-2 times/week
+  # Core: 3-4 times/week
+  # Power: 5+ times/week (daily)
+
+  engagement_metrics: "breadth-depth-intensity"
+  # Breadth: features used
+  # Depth: frequency of usage
+  # Intensity: time spent
+
+  defensibility: "hamilton-7-powers"
+  # Scale economies, switching costs, cornered resource,
+  # counter positioning, branding, network effects, process power
+
+  creativity: "20-techniques"
+  # 10 incremental + 10 innovative techniques applied systematically
+
+  buy_in_techniques:
+    - "framing"
+    - "social-proof"
+    - "goal-seek"
+    - "inception"
+    - "citation"
+    - "narration"
+
+# Vocabulary — what Abhishek calls things
+vocabulary:
+  primary_metric_term: "outcome metric"
+  problem_framing: "HMW"  # How Might We
+  roadmap_lens: ["strategic", "vision", "customer", "business"]
+  solution_validation: ["valuable", "usable", "feasible", "viable"]
+  prioritization_categories: ["differentiator", "mmr", "neutralizer", "quick-win"]
+
+# Past project patterns — populated by /pm:compound after each cycle
+project_patterns:
+  - project: "Deskless Workers"
+    date: "2023-06-01"
+    domain: "employee-experience"
+    opportunity_type: "data_insight"
+    solution_type: "differentiator"
+    outcome_metric: "self-service rate improvement"
+    predicted: "15%"
+    actual: "20%"
+    delta: "+5%"
+    key_learning: "Manufacturing activation takes longer but engagement is deeper once established"
+    activation:
+      setup: "90% completion"
+      aha: "60% tried once"
+      habit: "2 weeks active, 50% WAU"
+    engagement:
+      casual_pct: "30%"
+      core_pct: "45%"
+      power_pct: "25%"
+    business_impact: "10% customer retention increase, seat expansion 15%, revenue ~15M"
+
+  - project: "Task Center"
+    date: "2024-01-15"
+    domain: "employee-experience"
+    opportunity_type: "data_insight"
+    solution_type: "differentiator"
+    outcome_metric: "time saved per employee per week"
+    predicted: "2 hours"
+    actual: "2.5 hours"
+    delta: "+0.5 hours"
+    key_learning: "Defining outcome metric through stakeholder workshops produces better alignment than top-down definition"
+    activation:
+      setup: "85% completion"
+      aha: "55% tried once"
+      habit: "2.5 weeks to habit"
+    engagement:
+      casual_pct: "25%"
+      core_pct: "50%"
+      power_pct: "25%"
+    business_impact: "DAU +20%, retention +10%, upsell contribution to Pro"
+
+  - project: "Targeted Communications"
+    date: "2024-06-01"
+    domain: "employee-experience"
+    opportunity_type: "user_insight"
+    solution_type: "differentiator"
+    outcome_metric: "communication goal attainment rate"
+    predicted: "45%"
+    actual: "60%"
+    delta: "+15%"
+    key_learning: "New persona (service owner) adoption drives better engagement than expanding existing persona usage"
+    activation:
+      setup: "80% completion"
+      aha: "50% sent first campaign"
+      habit: "once per month for admin"
+    engagement:
+      casual_pct: "40%"
+      core_pct: "40%"
+      power_pct: "20%"
+    business_impact: "Engagement +15%, retention +10%, upsell from Base to Pro"
+
+  - project: "Multi-Team EC Adoption"
+    date: "2024-09-01"
+    domain: "employee-experience"
+    opportunity_type: "data_insight"
+    solution_type: "mmr"
+    outcome_metric: "non-ITSM team adoption rate"
+    predicted: "25%"
+    actual: "30%"
+    delta: "+5%"
+    key_learning: "Governance model (centralized vs distributed) is the hidden blocker — not features"
+    activation:
+      setup: "weeks to months (governance-dependent)"
+      aha: "first non-ITSM service live"
+      habit: "multi-team publishing cadence"
+    engagement:
+      casual_pct: "35%"
+      core_pct: "45%"
+      power_pct: "20%"
+    business_impact: "Adoption +30%, TTV reduced from months to weeks, retention + seat expansion"
+
+# Learned thresholds — calibrated from past projects
+thresholds:
+  avg_activation_setup: "84%"
+  avg_activation_aha: "55%"
+  avg_activation_habit_time: "2-3 weeks"
+  avg_estimation_accuracy: "+12% (tends to underpredict by 12%)"
+  typical_engagement_wau: "50%"
+  typical_casual_pct: "32%"
+  typical_core_pct: "45%"
+  typical_power_pct: "23%"
+
+# Decision log — grows with each /pm:decide and /pm:compound
+decision_log:
+  - date: "2023-05-15"
+    feature: "Deskless Workers"
+    decision: "Prioritize kiosk over mobile app"
+    rationale: "Factory workers can't carry phones on floor; kiosk at break room has higher reach"
+    outcome: "Correct — kiosk adoption was 3x projected. Mobile added later as fast-follow."
+    would_decide_differently: "No"
+
+  - date: "2024-02-01"
+    feature: "Task Center"
+    decision: "Build as platform component vs. standalone feature"
+    rationale: "Task data creates a unique dataset (work graph) that benefits other products"
+    outcome: "Correct — work graph became foundation for future roadmap"
+    would_decide_differently: "No"
+
+  - date: "2024-07-01"
+    feature: "Targeted Communications"
+    decision: "Limit MVP to service owners, not corporate comms"
+    rationale: "Service owner pain is immediate and measurable; corp comms is broader but vaguer"
+    outcome: "Correct — focused MVP drove adoption. Corp comms added in V2."
+    would_decide_differently: "No, but would have planned V2 scope earlier"
+
+# Framework notes — meta-learnings about the frameworks themselves
+framework_notes:
+  - "Activation funnel (setup/aha/habit) works well for B2B employee-facing products"
+  - "Revenue predictions tend to be conservative by ~12% — consider adjusting upward"
+  - "User segmentation (casual/core/power) maps well to enterprise engagement patterns"
+  - "For new personas: focus on service owner/admin activation before end-user engagement"
+  - "Governance model is often the hidden blocker for platform adoption — always investigate"
+  - "Differentiator classification correlates with better revenue outcomes than MMR"
+  - "Stakeholder buy-in with inception technique works best for cross-team initiatives"
+
+# Stakeholder landscape
+stakeholders:
+  engineering_lead:
+    style: "executor"
+    primary_technique: "citation"
+    notes: "Wants concrete data and clear scope"
+  design_lead:
+    style: "visionary"
+    primary_technique: "narration"
+    notes: "Responds to user stories and journey maps"
+  vp_product:
+    style: "process-driven"
+    primary_technique: "goal-seek"
+    notes: "Frame everything in terms of OKR alignment"
+  sales_leadership:
+    style: "customer-facing"
+    primary_technique: "social-proof"
+    notes: "Wants customer quotes and competitive positioning"

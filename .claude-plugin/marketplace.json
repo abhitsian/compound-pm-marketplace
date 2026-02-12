@@ -1,0 +1,23 @@
+{
+  "name": "compound-pm-marketplace",
+  "owner": {
+    "name": "Vaibhav",
+    "url": "https://github.com/vaibhav"
+  },
+  "metadata": {
+    "description": "Compound product management plugin marketplace",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "compound-pm",
+      "description": "Compound product management plugin. 9 agents, 15 commands, 6 skills. Your second brain as a PM — personalized workflows that compound with each product cycle.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Vaibhav"
+      },
+      "tags": ["product-management", "compound-engineering", "pm-workflows"],
+      "source": "./plugins/compound-pm"
+    }
+  ]
+}

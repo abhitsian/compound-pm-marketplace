@@ -1,0 +1,19 @@
+{
+  "name": "compound-pm",
+  "version": "1.0.0",
+  "description": "Compound product management plugin. 9 agents, 15 commands, 6 skills. Your second brain as a PM — personalized workflows that compound with each product cycle.",
+  "author": {
+    "name": "Vaibhav",
+    "url": "https://github.com/vaibhav"
+  },
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "compound-engineering",
+    "pm-workflows",
+    "opportunity-evaluation",
+    "metrics-design",
+    "stakeholder-alignment",
+    "personalized-pm"
+  ]
+}

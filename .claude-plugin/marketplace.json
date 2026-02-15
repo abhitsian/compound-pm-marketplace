@@ -6,17 +6,17 @@
   },
   "metadata": {
     "description": "Compound product management plugin marketplace",
-    "version": "1.0.0"
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "compound-pm",
-      "description": "Compound product management plugin. 9 agents, 16 commands, 6 skills. Your second brain as a PM — personalized workflows that compound with each product cycle.",
-      "version": "1.0.0",
+      "description": "Compound product management plugin. 13 agents, 31 commands, 11 skills. Your second brain as a PM — skill development and personalized workflows that compound with each product cycle.",
+      "version": "2.0.0",
       "author": {
         "name": "Vaibhav"
       },
-      "tags": ["product-management", "compound-engineering", "pm-workflows"],
+      "tags": ["product-management", "compound-engineering", "pm-workflows", "product-sense", "growth", "strategy"],
       "source": "./plugins/compound-pm"
     }
   ]

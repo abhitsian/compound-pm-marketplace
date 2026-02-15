@@ -6,7 +6,18 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin marketpla
 
 | Plugin | Description | Version |
 |--------|-------------|---------|
-| [compound-pm](plugins/compound-pm/) | Your second brain as a PM — 15 commands, 9 agents, 6 skills that compound with each product cycle | 1.0.0 |
+| [compound-pm](plugins/compound-pm/) | Your second brain as a PM — 31 commands, 13 agents, 11 skills that compound with each product cycle | 2.0.0 |
+
+## What's New in v2.0
+
+v1.0 introduced **artifact compounding** — specs, decisions, and learnings get better with every cycle. v2.0 adds a second layer: **judgment compounding** — simulation accuracy, bias awareness, and segmentation instincts get sharper the more you use them.
+
+Two layers of compounding:
+
+1. **Artifact compounding (v1.0):** Your specs, decisions, and learnings improve because the system remembers what worked and what didn't.
+2. **Judgment compounding (v2.0):** Your simulation accuracy, bias awareness, and segmentation instincts sharpen because the system trains your product intuition.
+
+v2.0 adds 15 new commands, 5 new skills, and 4 new agents across skill development, strategy, and growth.
 
 ## Installation
 
@@ -39,6 +50,14 @@ Then run the core loop on something real:
 /pm:compound     # Capture learnings (never skip this)
 ```
 
+Build judgment with the v2.0 skill-development commands:
+
+```
+/pm:teardown     # Tear down a product to train simulation muscle
+/pm:simulate     # Simulate user reactions before shipping
+/pm:bias-check   # Check your decisions for cognitive biases
+```
+
 ## How It Works
 
 Compound PM encodes your PM operating system into three knowledge layers:
@@ -51,15 +70,19 @@ Every command loads all three layers to produce personalized, context-aware outp
 
 ```
 Observe → Opportunity → Solution → Spec → Review → Measure → Compound
-   ↑                                                              │
+   ^                                                              |
    └──────────────── learnings feed back ──────────────────────────┘
+
+Teardown → Simulate → Bias-Check → Compound
+   ^                                    |
+   └──────── judgment sharpens ─────────┘
 ```
 
 **Cycle 1:** Generic frameworks. Predictions are guesses.
 **Cycle 10:** System knows your estimation bias, flags similar past failures, pre-fills metrics by project type.
 **Cycle 20:** Your second brain knows more about your PM operating system than you consciously remember.
 
-## All Commands
+## All Commands (31)
 
 ### Setup
 | Command | Purpose |
@@ -77,9 +100,9 @@ Observe → Opportunity → Solution → Spec → Review → Measure → Compoun
 ### Core Product Loop
 | Command | Purpose |
 |---------|---------|
-| `/pm:opportunity` | Signal → problem → business context → prioritized opportunity |
-| `/pm:solution` | 20 creativity techniques → risk/impact matrix → classification |
-| `/pm:spec` | Vision narrative → journey map → metrics → launch criteria |
+| `/pm:opportunity` | Signal -> problem -> business context -> prioritized opportunity |
+| `/pm:solution` | 20 creativity techniques -> risk/impact matrix -> classification |
+| `/pm:spec` | Vision narrative -> journey map -> metrics -> launch criteria |
 | `/pm:review` | 5 specialized agents review your spec in parallel |
 | `/pm:measure` | Predictions framework with activation funnel and continue/pause/pivot criteria |
 | `/pm:compound` | Compare predictions vs actuals, update profile, share with team |
@@ -92,12 +115,39 @@ Observe → Opportunity → Solution → Spec → Review → Measure → Compoun
 | `/pm:product-review` | Weekly reviews for team, leadership, or all-hands |
 | `/pm:share` | Promote a learning to the team knowledge base |
 
+### Skill Development (v2.0)
+| Command | Purpose |
+|---------|---------|
+| `/pm:teardown` | Guided product teardown that trains simulation muscle |
+| `/pm:simulate` | Simulate user reactions before shipping |
+| `/pm:bias-check` | Check decisions for cognitive biases |
+| `/pm:friction-log` | Structured friction logging |
+| `/pm:wayrtd` | "What Are You Really Trying To Do?" — peel back feature requests to find the real need |
+| `/pm:motivation-map` | Map the adoption equation (motivation, ability, triggers) |
+| `/pm:ux-psychology` | Apply behavioral design principles to user flows |
+
+### Strategy (v2.0)
+| Command | Purpose |
+|---------|---------|
+| `/pm:segment` | Needs-based user segmentation |
+| `/pm:differentiate` | Competitive differentiation using the 7 Powers framework |
+| `/pm:strategy` | Full strategy document |
+
+### Growth & Metrics (v2.0)
+| Command | Purpose |
+|---------|---------|
+| `/pm:growth-model` | Growth loop design |
+| `/pm:retention` | Retention analysis |
+| `/pm:north-star` | North Star Metric design |
+| `/pm:goals` | Team goal setting derived from NSM |
+| `/pm:tradeoff` | Structured tradeoff analysis |
+
 ### Shortcut
 | Command | Purpose |
 |---------|---------|
-| `/pm:lfg` | Full pipeline: opportunity → solution → spec → review → measure → buyin |
+| `/pm:lfg` | Full pipeline: opportunity -> solution -> spec -> review -> measure -> buyin |
 
-## Agents
+## Agents (13)
 
 ### Review Agents (run in parallel during `/pm:review`)
 | Agent | Focus |
@@ -116,8 +166,17 @@ Observe → Opportunity → Solution → Spec → Review → Measure → Compoun
 | research-synthesizer | Find patterns across multiple interviews |
 | competitive-landscape | Research competitive positioning and market context |
 
-## Skills
+### Judgment Agents (v2.0)
+| Agent | Focus |
+|-------|-------|
+| simulation-coach | Reviews teardowns for blind spots and simulation gaps |
+| bias-detector | Detects cognitive biases in documents and decisions |
+| strategy-reviewer | Reviews strategy docs for coherence and completeness |
+| growth-analyst | Analyzes growth models for loop integrity and retention risks |
 
+## Skills (11)
+
+### Core Skills
 | Skill | Expertise |
 |-------|-----------|
 | pm-operating-system | Loads PM profile and adapts every command |
@@ -126,6 +185,15 @@ Observe → Opportunity → Solution → Spec → Review → Measure → Compoun
 | solution-creativity | 20 systematic techniques for solution generation |
 | vision-narrative | 3-part aspirational narratives |
 | stakeholder-buyin | 6 techniques: framing, social proof, goal seek, inception, citation, narration |
+
+### v2.0 Skills
+| Skill | Expertise |
+|-------|-----------|
+| simulation | Cognitive empathy engine — predict user reactions with increasing accuracy |
+| behavioral-design | Motivation theory and UX psychology for product flows |
+| strategy-craft | Needs-based segmentation and competitive differentiation |
+| growth-systems | Growth loop design, retention analysis, and flywheel mechanics |
+| analytical-thinking | North Star Metrics, goal decomposition, and structured tradeoffs |
 
 ## Documentation
 

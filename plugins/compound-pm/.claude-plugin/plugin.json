@@ -1,7 +1,7 @@
 {
   "name": "compound-pm",
-  "version": "1.0.0",
-  "description": "Compound product management plugin. 9 agents, 16 commands, 6 skills. Your second brain as a PM — personalized workflows that compound with each product cycle.",
+  "version": "2.0.0",
+  "description": "Compound product management plugin. 13 agents, 31 commands, 11 skills. Your second brain as a PM — skill development and personalized workflows that compound with each product cycle.",
   "author": {
     "name": "Vaibhav",
     "url": "https://github.com/abhitsian"
@@ -11,8 +11,17 @@
     "product-management",
     "compound-engineering",
     "pm-workflows",
-    "opportunity-evaluation",
+    "product-sense",
+    "simulation",
+    "cognitive-empathy",
+    "strategy",
+    "segmentation",
+    "differentiation",
+    "growth",
+    "retention",
+    "behavioral-design",
     "metrics-design",
+    "opportunity-evaluation",
     "stakeholder-alignment",
     "personalized-pm"
   ]

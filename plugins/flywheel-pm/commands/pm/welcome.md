@@ -4,11 +4,11 @@ description: Guided first-run experience for new PMs — takes you from install 
 argument-hint: ""
 ---
 
-# Welcome to Compound PM — Your Second Brain as a PM
+# Welcome to Flywheel PM
 
 ## Introduction
 
-Welcome. This guide will take you from zero to your first full product cycle with Compound PM. By the end, you'll have:
+Welcome. This guide will take you from zero to your first full product cycle with Flywheel PM. By the end, you'll have:
 
 1. A personalized PM profile that knows how you think
 2. Your work context loaded so every command is situationally aware
@@ -279,7 +279,7 @@ Jump to Phase 3 (See Value Immediately) or Phase 4 (First Full Cycle) above.
 ```
 /pm:compound
 ```
-Compare predictions to actuals. Update your profile. Share with team. This is the step that separates "PM with AI help" from "compound PM."
+Compare predictions to actuals. Update your profile. Share with team. This is the step that separates "PM with AI help" from "Flywheel PM."
 
 **Weekly ritual:**
 ```

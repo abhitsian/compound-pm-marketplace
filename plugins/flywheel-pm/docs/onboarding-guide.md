@@ -1,4 +1,4 @@
-# Compound PM — Onboarding Guide
+# Flywheel PM — Onboarding Guide
 
 ## The 5-Day Journey
 
@@ -15,8 +15,8 @@ Set up the plugin and create your PM profile.
 
 **1. Install (2 min)**
 ```bash
-claude plugin marketplace add https://github.com/abhitsian/compound-pm-marketplace
-claude plugin install compound-pm
+claude plugin marketplace add https://github.com/abhitsian/flywheel-pm-marketplace
+claude plugin install flywheel-pm
 ```
 Restart Claude Code.
 
@@ -288,7 +288,7 @@ That's exactly the point. `/pm:onboard` captures YOUR frameworks. The plugin ada
 The individual profile and compound loop work perfectly for solo PMs. Skip the team layer or use it as your personal knowledge base.
 
 **"I already have a PM tool (Notion, Linear, etc)."**
-Compound PM doesn't replace your project management tool. It's your thinking tool. Use it to think through problems, then move the output into your existing tools.
+Flywheel PM doesn't replace your project management tool. It's your thinking tool. Use it to think through problems, then move the output into your existing tools.
 
 **"What if I disagree with the output?"**
 Good. That means you have taste. Edit the output, and the compound step captures what you changed. Over time, the system learns what you adjust and adapts.

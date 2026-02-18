@@ -1,4 +1,4 @@
-# Compound PM — Cheat Sheet
+# Flywheel PM — Cheat Sheet
 
 ## First Time Setup
 ```

@@ -1,7 +1,7 @@
 ---
 name: pm:spec
-description: Transform a solution into a detailed, actionable product specification
-argument-hint: "[solution doc path, feature description, or opportunity context]"
+description: Transform a solution into a detailed, actionable product specification — from solution docs or via structured interview
+argument-hint: "[solution doc path, feature description, or 'interview']"
 ---
 
 # Product Specification
@@ -10,19 +10,127 @@ argument-hint: "[solution doc path, feature description, or opportunity context]
 
 Take a recommended solution and produce a detailed spec that engineering, design, and stakeholders can execute against. Adapts to the PM's preferred spec structure, metrics framework, and vocabulary.
 
+Supports two modes:
+1. **Pipeline Mode** — Generate spec from an existing solution/opportunity doc (default)
+2. **Interview Mode** — Create spec from scratch by interviewing the PM using AskUserQuestion
+
 ## Input
 
 <spec_input> #$ARGUMENTS </spec_input>
 
-**If a file path:** Read the solution or opportunity document.
-**If a description:** Use as context.
-**If empty:** Check `docs/solutions/` for the most recent solution doc.
-
-## Step 0: Load Context
+## Step 0: Load Context & Select Mode
 
 ```bash
 cat pm-profile.yaml 2>/dev/null
 ```
+
+**Determine mode from input:**
+- If input contains "interview" or no solution/opportunity doc exists → **Interview Mode** (go to Step 0a)
+- If input is a file path or description → **Pipeline Mode** (go to Step 1)
+- If empty → Ask the user
+
+**If mode is ambiguous**, use **AskUserQuestion tool**:
+
+**Question:** "How would you like to create this spec?"
+
+**Options:**
+1. **From solution doc** — I have a solution or opportunity doc to work from
+2. **Interview me** — Start from scratch — ask me questions and build the spec from my answers
+3. **Review existing spec** — Analyze a spec I already have against the quality checklist
+
+If the user selects **"Interview me"** → go to Step 0a.
+If the user selects **"Review existing spec"** → go to Step 0b.
+Otherwise → go to Step 1 (Pipeline Mode).
+
+## Step 0a: Interview Mode (AskUserQuestion-Based)
+
+Read the spec template reference file for the full question framework:
+```
+Read skills/spec-review/references/spec-template.md
+```
+
+### Initial Context
+
+Use **AskUserQuestion tool** to gather basic context:
+
+**Question:** "What are we speccing? Give me the high-level picture."
+
+**Options:**
+1. **New feature** — Adding something that doesn't exist yet
+2. **Enhancement** — Improving existing functionality
+3. **Redesign** — Rethinking how something works
+
+Then ask: feature name, target users, and high-level goal.
+
+### Structured Interview
+
+Walk through the 9 question categories from the spec-review skill, using AskUserQuestion for each group. Ask 2-3 questions per call, making options concrete and specific to the PM's project.
+
+**Interview order:**
+1. **Problem & Context** (questions 1-4) — User pain, persona, goals, business justification
+2. **Scope & Prioritization** (questions 5-7) — MVP vs future, dependencies, constraints
+3. **User Flows & Experience** (questions 8-12) — Happy path, entry points, UI, feedback, responsive
+4. **Business Logic & Validation** (questions 13-16) — Input rules, business rules, data, limits
+5. **Edge Cases & Error Handling** (questions 17-20) — Errors, communication, concurrency, boundaries
+6. **Permissions & Security** (questions 21-24) — Access, roles, privacy, security risks
+7. **Cross-Cutting Concerns** (questions 25-28) — Accessibility, loading, offline, patterns
+8. **Success Metrics** (questions 29-31) — KPIs, analytics, launch criteria
+9. **Assumptions & Risks** (questions 32-34) — Assumptions, open questions, failure modes
+
+**Interview rules:**
+- Ask non-obvious questions that surface hidden complexity
+- Probe for edge cases: "What happens if..."
+- Clarify scope boundaries: "What are we NOT doing?"
+- Validate assumptions: "Are we assuming..."
+- Explore error scenarios: "What can go wrong?"
+- Define success: "How do we measure this worked?"
+- Consider all user types: "Who can/cannot do this?"
+- Follow up on vague answers — don't accept "it should work well"
+
+After gathering all answers, proceed to Step 1 using interview answers as context (skip solution doc reading). Generate the full spec using the template structure from Part 2 of the reference file.
+
+## Step 0b: Checklist Review Mode
+
+Ask the user for the spec file path, then read:
+1. The spec file to review
+2. The review checklist from the spec-review skill
+
+Analyze against the completeness checklist, quality checklist, and red flags list. Generate a review report:
+
+```markdown
+## Spec Review: [Feature Name]
+
+**Overall Assessment:** [Complete / Needs Work / Incomplete]
+
+### Strengths
+- [What's well-documented]
+
+### Critical (Must-fix before implementation)
+- [ ] [Finding with specific recommendation]
+
+### Important (Should-fix for quality)
+- [ ] [Finding with specific recommendation]
+
+### Nice-to-have (Would improve but not blocking)
+- [ ] [Finding with specific recommendation]
+
+### Questions for PM
+- [Clarifying questions to resolve gaps]
+```
+
+Then use **AskUserQuestion tool**:
+
+**Question:** "Review complete. [X] critical, [Y] important, [Z] nice-to-have findings. What's next?"
+
+**Options:**
+1. **Fix all critical issues** — Address must-fix findings and update spec
+2. **Triage findings** — Go through each finding one by one to accept/reject/modify
+3. **Fix all critical + important** — Address both tiers
+4. **Run full `/pm:review`** — Multi-agent deep review with 5 specialized agents
+
+**Done.** Do not proceed to Steps 1-7 for review mode.
+
+## Step 1: Vision Narrative
 
 Read solution doc to extract: recommended solution, metrics, risk assessment, validation plan.
 

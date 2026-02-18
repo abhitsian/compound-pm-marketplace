@@ -1,4 +1,4 @@
-# Compound PM Marketplace
+# Flywheel PM Marketplace
 
 A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin marketplace for product managers.
 
@@ -6,7 +6,7 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin marketpla
 
 | Plugin | Description | Version |
 |--------|-------------|---------|
-| [compound-pm](plugins/compound-pm/) | Your second brain as a PM — 31 commands, 13 agents, 11 skills that compound with each product cycle | 2.0.0 |
+| [flywheel-pm](plugins/flywheel-pm/) | Small pushes, unstoppable momentum — 32 commands, 13 agents, 13 skills. Your PM operating system that gets sharper with every product cycle | 2.2.0 |
 
 ## What's New in v2.0
 
@@ -23,10 +23,10 @@ v2.0 adds 15 new commands, 5 new skills, and 4 new agents across skill developme
 
 ```bash
 # Add the marketplace
-claude plugin marketplace add https://github.com/abhitsian/compound-pm-marketplace
+claude plugin marketplace add https://github.com/abhitsian/flywheel-pm-marketplace
 
 # Install the plugin
-claude plugin install compound-pm
+claude plugin install flywheel-pm
 ```
 
 Restart Claude Code after installation.
@@ -60,7 +60,7 @@ Build judgment with the v2.0 skill-development commands:
 
 ## How It Works
 
-Compound PM encodes your PM operating system into three knowledge layers:
+Flywheel PM encodes your PM operating system into three knowledge layers:
 
 - **pm-profile.yaml** — How you think. Your frameworks, vocabulary, and past patterns. Auto-enriched by `/pm:compound` after each cycle.
 - **team-profile.yaml** — What the team knows collectively. Built via `/pm:share`.
@@ -197,10 +197,10 @@ Teardown → Simulate → Bias-Check → Compound
 
 ## Documentation
 
-- [Plugin README](plugins/compound-pm/README.md) — Full plugin documentation
-- [Onboarding Guide](plugins/compound-pm/docs/onboarding-guide.md) — 5-day guided setup
-- [Cheat Sheet](plugins/compound-pm/docs/cheatsheet.md) — Quick reference
-- [Sample Profile](plugins/compound-pm/docs/sample-pm-profile.yaml) — Example PM profile
+- [Plugin README](plugins/flywheel-pm/README.md) — Full plugin documentation
+- [Onboarding Guide](plugins/flywheel-pm/docs/onboarding-guide.md) — 5-day guided setup
+- [Cheat Sheet](plugins/flywheel-pm/docs/cheatsheet.md) — Quick reference
+- [Sample Profile](plugins/flywheel-pm/docs/sample-pm-profile.yaml) — Example PM profile
 
 ## License
 

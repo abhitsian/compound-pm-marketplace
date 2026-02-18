@@ -1,12 +1,12 @@
-# Compound PM — Your Second Brain as a Product Manager
+# Flywheel PM — Small Pushes, Unstoppable Momentum
 
-**v2.0.0** — Now compounds judgment, not just artifacts.
+**v2.2.0** — Your PM operating system that gets sharper with every product cycle.
 
 Each product cycle should make the next one easier — not harder.
 
-Compound PM is a Claude Code plugin that encodes your PM operating system into reusable commands, agents, and skills. It learns how **you** work, remembers what **you've** tried, and gets smarter with every cycle.
+Flywheel PM is a Claude Code plugin that encodes your PM operating system into reusable commands, agents, and skills. It learns how **you** work, remembers what **you've** tried, and gets smarter with every cycle.
 
-v1.0 compounded **artifacts** — specs, decisions, learnings. v2.0 adds a second compounding layer: **judgment**. Simulation accuracy, bias awareness, segmentation instincts, strategic reasoning. The plugin goes from "PM workflow automation" to "PM skill development platform."
+Two layers compound: **artifacts** (specs, decisions, learnings) and **judgment** (simulation accuracy, bias awareness, segmentation instincts, strategic reasoning). Each push of the flywheel — each cycle — adds momentum. The plugin goes from "PM workflow automation" to "PM skill development platform."
 
 ## What's in the box
 
@@ -22,10 +22,10 @@ v1.0 compounded **artifacts** — specs, decisions, learnings. v2.0 adds a secon
 
 ```bash
 # Add the marketplace
-claude plugin marketplace add https://github.com/abhitsian/compound-pm-marketplace
+claude plugin marketplace add https://github.com/abhitsian/flywheel-pm-marketplace
 
 # Install the plugin
-claude plugin install compound-pm
+claude plugin install flywheel-pm
 ```
 
 ### First Run
@@ -314,7 +314,7 @@ This is where the gains accumulate. Without it, you've done traditional PM with 
 
 Most PM work gets harder over time because each product cycle starts from scratch. Different PMs reinvent the same frameworks. Past learnings live in people's heads and leave when they do.
 
-Compound PM flips this:
+Flywheel PM flips this:
 
 - **Individual compound:** Your PM profile gets smarter with each cycle
 - **Team compound:** Shared learnings propagate to every PM on the team

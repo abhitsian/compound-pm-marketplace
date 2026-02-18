@@ -1,23 +1,23 @@
 {
-  "name": "compound-pm-marketplace",
+  "name": "flywheel-pm-marketplace",
   "owner": {
     "name": "Vaibhav",
     "url": "https://github.com/abhitsian"
   },
   "metadata": {
-    "description": "Compound product management plugin marketplace",
-    "version": "2.0.0"
+    "description": "Flywheel PM plugin marketplace — small pushes, unstoppable momentum",
+    "version": "2.2.0"
   },
   "plugins": [
     {
-      "name": "compound-pm",
-      "description": "Compound product management plugin. 13 agents, 31 commands, 11 skills. Your second brain as a PM — skill development and personalized workflows that compound with each product cycle.",
-      "version": "2.0.0",
+      "name": "flywheel-pm",
+      "description": "Flywheel PM — 13 agents, 32 commands, 13 skills. Small pushes, unstoppable momentum. Your PM operating system that gets sharper with every product cycle.",
+      "version": "2.2.0",
       "author": {
         "name": "Vaibhav"
       },
-      "tags": ["product-management", "compound-engineering", "pm-workflows", "product-sense", "growth", "strategy"],
-      "source": "./plugins/compound-pm"
+      "tags": ["product-management", "flywheel-pm", "pm-workflows", "product-sense", "growth", "strategy"],
+      "source": "./plugins/flywheel-pm"
     }
   ]
 }

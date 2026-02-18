@@ -1,4 +1,4 @@
-# Compound PM Plugin
+# Flywheel PM
 
 ## Philosophy
 
@@ -20,12 +20,12 @@ The plugin adapts to each PM through a **PM Profile** (`pm-profile.yaml`) that g
 ## Directory Structure
 
 ```
-commands/pm/         # Core PM workflow commands (31 total)
+commands/pm/         # Core PM workflow commands (32 total)
 agents/
 ├── review/          # Spec and strategy review agents
 ├── research/        # Research and analysis agents
 └── coaching/        # Skill development coaching agents
-skills/              # Domain expertise (11 total)
+skills/              # Domain expertise (13 total)
 docs/                # Onboarding guide, cheatsheet, sample profile
 ```
 
@@ -39,6 +39,7 @@ docs/                # Onboarding guide, cheatsheet, sample profile
 ### Skill Development (NEW in v2.0)
 - `/pm:teardown` — Product teardown practice (simulation muscle)
 - `/pm:simulate` — Predict user reactions to changes
+- `/pm:riff` — Riff on product news/announcements from multiple strategic angles (product sense muscle)
 - `/pm:bias-check` — Cognitive bias detection
 - `/pm:friction-log` — Structured friction logging
 - `/pm:wayrtd` — "What Are You Really Trying To Do?"
@@ -57,7 +58,7 @@ docs/                # Onboarding guide, cheatsheet, sample profile
 ### Core Product Loop
 - `/pm:opportunity` — Opportunity evaluation
 - `/pm:solution` — Solution design
-- `/pm:spec` — Spec writing
+- `/pm:spec` — Spec writing (pipeline from solution doc, AskUserQuestion interview mode, or checklist review)
 - `/pm:review` — Multi-agent review
 - `/pm:measure` — Measurement framework
 - `/pm:compound` — Learning capture
@@ -109,6 +110,7 @@ docs/
 ├── compounds/         # Captured learnings
 ├── narratives/        # Stakeholder narratives
 ├── reviews/           # Product reviews
+├── riffs/             # Product riff analyses (v2.2)
 ├── teardowns/         # Product teardowns (v2.0)
 ├── simulations/       # User simulations (v2.0)
 ├── friction-logs/     # Friction logs (v2.0)

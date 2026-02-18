@@ -1,7 +1,7 @@
 {
-  "name": "compound-pm",
-  "version": "2.0.0",
-  "description": "Compound product management plugin. 13 agents, 31 commands, 11 skills. Your second brain as a PM — skill development and personalized workflows that compound with each product cycle.",
+  "name": "flywheel-pm",
+  "version": "2.2.0",
+  "description": "Flywheel PM — 13 agents, 32 commands, 13 skills. Small pushes, unstoppable momentum. Your PM operating system that gets sharper with every product cycle.",
   "author": {
     "name": "Vaibhav",
     "url": "https://github.com/abhitsian"
@@ -9,7 +9,7 @@
   "license": "MIT",
   "keywords": [
     "product-management",
-    "compound-engineering",
+    "flywheel-pm",
     "pm-workflows",
     "product-sense",
     "simulation",
